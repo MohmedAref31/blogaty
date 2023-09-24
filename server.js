@@ -20,7 +20,7 @@ const dbConnection = async () =>{
 app.use(express.json());
 app.use(cookieParser())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://blogaaty-mohmedaref31.vercel.app",
     credentials:true
 }))
 // console.log(path.join(__dirname,"/uploads"))
