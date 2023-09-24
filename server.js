@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 const dbConnection = async () =>{
     await mongoose.connect(process.env.DB)
             .then(()=>console.log("db connection good"))
-            .catch((e)=>console.log(e))
+            .catch((e)=>console.log("faild to connect to db"))
 }
 
 // middlewars //
