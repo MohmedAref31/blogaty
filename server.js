@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 
 
 const dbConnection = async () =>{
-    await mongoose.connect(process.env.DB)
+    await mongoose.connect("mongodb+srv://mohmedwork2003:mohmed123@cluster0.uomjdop.mongodb.net/?retryWrites=true&w=majority")
             .then(()=>console.log("db connection good"))
             .catch((e)=>console.log("faild to connect to db"))
 }
